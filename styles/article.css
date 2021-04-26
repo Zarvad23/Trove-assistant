@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  .header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #00475f;
+  }
+  
+  .inner_header{
+    width: 1200px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  
+  }
+  
+  .logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+  }
+  
+  .logo_container h1{
+    color:white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 35px;
+    font-weight: 200;
+  }
+  
+  .logo_container h1 span{
+    font-weight: 800;
+  }
+  
+  .lg_rg{
+    float: right;
+    height:100%;
+  }
+  
+  .lg_rg a{
+    margin-top: 25px;
+    height: 30px;
+    display: table;
+    float: left;
+    padding: 0px 10px;
+  }
+  
+  .lg_rg a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+  }
+  
+  .design {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0,0,0,.5);
+    user-select: none;
+    padding: .7em 1.5em;
+    border: 1px solid rgb(80,32,0);
+    border-radius: 5px;
+    outline: none;
+    background: rgb(147,80,36) linear-gradient(rgb(106,58,26), rgb(147,80,36) 80%);
+    box-shadow:
+     0 6px rgb(86,38,6),
+     0 3px 15px rgba(0,0,0,.4),
+     inset 0 1px rgba(255,255,255,.3),
+     inset 0 0 3px rgba(255,255,255,.5);
+    transition: .2s;
+   }
+  
+   .design:hover{
+    background: rgb(167,91,41) linear-gradient(rgb(126,69,31), rgb(167,91,41) 80%);
+   }
+  
+   .design:active{
+    background: rgb(120,63,25) linear-gradient(rgb(120,63,25) 20%, rgb(167,91,41));
+    box-shadow:
+     0 2px rgb(86,38,6),
+     0 1px 6px rgba(0,0,0,.4),
+     inset 0 1px rgba(255,255,255,.3),
+     inset 0 0 3px rgba(255,255,255,.5);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+   }
+  
+  .inner_header .searchbar{
+    float: left;
+    margin-left: 10px;
+  } 
+  
+  .inner_header input[type=text] {
+    padding: 6px;
+    margin-top: 27px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+  }
+  
+  .inner_header .searchbar button {
+    float: right;
+    padding: 6px;
+    margin-top: 27px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+  }
+  
+  .inner_header .play{
+    float: left;
+  }
+  
+  .inner_header .play li {
+    float: right;
+    padding: 6px;
+    margin-top: 25px;
+    font-size: 16px;
+  }
+   /*Снизу меню/сверху шапка*/
+  
+  body {
+    background: url(../images/Wiki-background.jpg) no-repeat center center fixed;
+    background-size: cover ;
+    background-attachment: scroll;
+    font-family: 'Times', Times New Roman, serif;
+  }
+  
+  #nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 3px solid #174050;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  #nav ul{
+    padding: 5px;
+  }
+  
+  #nav li { 
+    display: inline;
+    border-left: 1px solid #bbb;
+    padding:12px 2px 12px 4px;
+  }
+  
+  #nav li:first-child{
+    border: none;
+  }
+  
+  
+  
+  #nav {
+    width: 1200px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #1b4c5f;
+  }
+  #nav a {
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    width: 90px;
+  }
+  #nav a:hover {
+    background-color: rgb(49, 172, 209);
+  }
+  
+  /*Снизу контент/ сверху меню*/
+  .ct_sd{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .row { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .row { height: 1%; }
+  .row { display: block; }
+  /* close commented backslash hack */
+  
+  .ct_sd .row{
+    width: 1200px;
+    min-height: 1000px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .ct_sd .row .kontent{
+    min-height: 1000px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .inner_kontent{
+    padding: 10px;
+  }
+  
+  
+.article{
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background: rgb(235, 235, 235);
+    width: 100%;
+    min-height: 1000px;
+    display: inline-block;
+}
+  
+.news{
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 98%;
+    min-height: 1000px;
+    border-bottom: 2px solid black ;
+}
+
+.news:last-child{
+    border-bottom: none;
+
+}
+
+.news .news-body{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.news .news-body .news-row{
+    min-height: 1000px;
+    width: 100%;
+}
+
+.news-top{
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.news .news-body .news-row .news-top img{
+  text-align: center;
+  padding: 2px;
+  width: 600px;
+  height: 500px;
+}
+
+.news .news-body .news-row .news-right{
+  border: 1px solid #7fffd4;  
+  background: white;  
+  padding-left: 10px;
+  width: 100%;
+  min-height: 500px;
+}
+
+
+
+.news .news-body .news-row .news-right .date{
+  margin-bottom: 15px;
+}
+
+.news .news-body .news-row .news-right .news-kontent{
+  font-size: 20px;
+}
+
+/*Снизу футер/сверху контент*/
+
+  .footer {
+    width: 100%;
+    height: 80px;
+    display: block;
+  }
+  
+  
+  .footer .inner_footer {
+    width: 1200px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #00475f;
+  }
+  
+  .left{
+    height: 100%;
+    width: 30%;
+    display: table;
+    float: left;
+  }
+  
+  .left h1{
+    color:white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 200px;
+    padding-left: 10px;
+  }
+  
+  
+  .right{
+    float: right;
+    width: 30%;
+    height: 100%;
+    padding-right: 10px ;
+    padding-top: 10px;
+  }
+  
+  .inner_right-1{
+    width: 100%;
+    height: 50%;
+  }
+  
+  .inner_right-1 li{
+    float: right;
+    margin-right: 10px;
+  }
+  
+  .inner_right-1 li a{
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .inner_right-2{
+    width: 100%;
+    height: 50%;
+  }
+  
+  
+  .footer .right .inner_right-2 img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 5px;
+  }
+  
+  
+
+
+
+  .footer .middle{
+    float: left;
+    text-align: center;
+    width: 40%;
+  }
+  
+  .inner_middle-1{
+   width: 100%;
+   height: 50%; 
+  }
+  
+  .inner_middle-2{
+    width: 100%;
+    height: 50%; 
+  }
+  
+  .footer .middle .inner_middle-1 li{
+    text-align: center;
+  }
+  
+  .footer .middle .inner_middle-1 li a{
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .footer .middle .inner_middle-2 li a{
+    color: #fac863;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 5px solid rgb(199, 148, 37);
+  }
+  
+  .inner_middle-2{
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  
+  
